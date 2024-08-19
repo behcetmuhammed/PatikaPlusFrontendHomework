@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Practical - Use Form Elements</title>
+  </head>
+  <!-- Aşağıdaki gereksinimleri karşılayan bir HTML formu oluşturun:
+1. Kullanıcının adını ve soyadını girebileceği iki metin kutusu.
+2. Kullanıcının e-posta adresini girebileceği bir e-posta giriş alanı.
+3. Kullanıcının parolasını girebileceği bir parola giriş alanı.
+4. Kullanıcının cinsiyetini seçebileceği iki radyo düğmesi (Erkek ve Kadın).
+
+5. Kullanıcının bir dizi seçenek arasından favori meyvesini seçebileceği bir açılır liste (örneğin, Elma, Muz, Çilek).
+6. Kullanıcının bir mesaj yazabileceği bir metin alanı.
+7. Tüm bilgileri göndermek için bir "Gönder" düğmesi. -->
+
+  <body>
+    <h2>Aşağıdaki alanları doldurunuz!</h2>
+    <form>
+      <fieldset>
+        <legend>Kişisel Bilgiler:</legend>
+        <!-- Ad bilgisi -->
+        <div>
+          <label for="fname">Ad: <br /></label>
+          <input
+            type="text"
+            name="first_name"
+            id="fname"
+            placeholder="Adınızı girin"
+          />
+        </div>
+        <!-- Soyad bilgisi -->
+        <div>
+          <label for="lname">Soyad: <br /></label>
+          <input
+            type="text"
+            name="last_name"
+            id="lname"
+            placeholder="Soyadınızı girin"
+          />
+        </div>
+        <!-- Email bilgisi -->
+        <div>
+          <label for="email">E-posta: <br /></label>
+          <input type="email" id="email" placeholder="example@info.com" />
+        </div>
+        <!-- Şifre bilgisi -->
+        <div>
+          <label for="password">Şifre: <br /></label>
+          <input type="password" id="password" placeholder="Şifrenizi girin" />
+        </div>
+        <!-- Cinsiyet bilgisi -->
+        <div>
+          <label for="gender">Cinsiyet: <br /></label>
+          <input type="radio" name="gender" value="male" />Erkek
+          <input type="radio" name="gender" value="famale" />Kadın
+        </div>
+        <!-- Favori meyve bilgisi -->
+        <div>
+          <label for="favorite_fruit">Favori Meyvenizi Seçiniz: <br /></label>
+          <select name="favorite_fruit">
+            <option value="select">Seçiniz</option>
+            <option value="apple">Elma</option>
+            <option value="banana">Muz</option>
+            <option value="orange">Portakal</option>
+            <option value="pear">Armut</option>
+            <option value="plum">Erik</option>
+          </select>
+        </div>
+        <!-- Metin alanı-->
+        <div>
+          <br />
+          <label for="message">Mesajınız:</label>
+          <textarea
+            name="message"
+            id="message"
+            placeholder="Mesajınızı buraya yazın"
+            rows="4"
+            cols="18"
+          ></textarea>
+        </div>
+        <!-- Gönder butonu -->
+        <div>
+          <button type="submit">Kaydet</button>
+          <button type="reset">Sıfırla</button>
+        </div>
+      </fieldset>
+    </form>
+  </body>
+</html>
