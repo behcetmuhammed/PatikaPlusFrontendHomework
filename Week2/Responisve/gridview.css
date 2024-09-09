@@ -1,0 +1,43 @@
+.container,
+.container-fluid{
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.row{
+    display: flex; 
+    flex-direction: row; /*Flex öğeleri, yatay eksende (soldan sağa) sıralanır */
+    flex-wrap: wrap;/*Flex öğeleri bir satıra sığmadığında otomatik olarak bir alt satıra geçer. */
+    margin-right: -8px;
+    margin-left: -8px;
+}
+
+.row.center{
+    text-align: center; /*align: hizazlama*/
+}
+
+[class *= "col-"]{ /* "col-" dizisini içeren tüm HTML elementlerini hedef alır.*/
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.col-xs{
+    flex-grow: 1; /*CSS Flexbox düzeninde flex öğelerinin mevcut boşluğu nasıl dolduracağını belirler*/
+    flex-basis: 0;
+    max-width: 100%;
+}
+
+.col-xs-1{
+    flex-basis: 8.3%;
+}
+.col-xs-2{
+    flex-basis: 16.6%;
+}
+.col-xs-3{
+    flex-basis: 25%;
+}
+.col-xs-4{
+    flex-basis: 33.3%;
+}
