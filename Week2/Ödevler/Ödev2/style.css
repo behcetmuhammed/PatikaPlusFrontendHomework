@@ -1,0 +1,114 @@
+:root {
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background-color: whitesmoke;
+  margin: 0;
+  padding: 0;
+}
+
+/*! Header */
+.head {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.head .logo {
+  width: 40px;
+  margin: 5px;
+}
+
+.head .williamshakespeare {
+  display: inline;
+}
+
+.williamshakespeare {
+  font-family: "Bungee Tint", sans-serif;
+  text-align: center;
+  font-size: 25px;
+}
+
+#header {
+  display: flex;
+  position: sticky;
+  background-color: #c96868;
+  justify-content: flex-end;
+  gap: 0 20px;
+  padding: 5px 25px;
+}
+
+#nav li {
+  display: inline;
+  margin: 0 12px;
+}
+
+#nav a {
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+  color: #fff4ea;
+  padding: 7px 15px;
+}
+
+#nav a:hover {
+  background-color: #fadfa1;
+  color: black;
+}
+
+/*! Section */
+#article1 {
+  display: flex;
+  padding: 20px;
+  justify-content: center;
+  align-items: center;
+}
+#article1 p {
+  display: inline;
+}
+
+#article1 img {
+  width: 250px;
+}
+
+#article2 {
+  background-color: #c4dad2;
+  padding: 20px;
+}
+
+#article3 {
+  background-color: #6a9c89b9;
+  padding: 20px;
+}
+
+.eserler {
+  display: flex;
+  justify-content: center;
+  /* border: 2px solid #c96868; */
+}
+
+.oyunlar,
+.soneler,
+.siirler {
+  background-color: #ffe5cf;
+  border: 2px solid #fff;
+  padding: 20px;
+  margin: 0 10px;
+}
+
+.oyunlar h2,
+.soneler h2,
+.siirler h2 {
+  text-align: center;
+  font-size: 1.5em;
+  background-color: #c96868;
+  color: white;
+}
+
+#article3 h1 {
+  font-size: 1.5em;
+}
+/*! footer */
+#footer p {
+  text-align: center;
+}
